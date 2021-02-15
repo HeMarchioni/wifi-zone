@@ -1,0 +1,208 @@
+@charset "utf-8"; 
+
+body {
+	font-family: 'Open Sans', sans-serif;
+  /*flex-direction: column;*/ /* Pra deixar o layout em colunas */
+  background-color: #ddd;
+}
+
+.container-wrap {
+	max-width: 75%;
+	margin: auto;
+	background: #fff;
+    border-radius: 20px;
+}
+
+.container-content {
+	padding: 4rem;
+	display: flex; /* Display flex pra deixar do jeito flexível */
+	flex-wrap: wrap; /* Pra dividir o layout caso precise */
+}
+
+/* ---- IMAGENS ----- */
+
+.main-logo {
+  width: 200px;
+}
+
+.img-saguao,
+.img-programador {
+  float: right;
+  margin-top: 2rem;
+  border: 2px solid #666;
+}
+
+.img-programador,
+#patrocinadores {
+  width: 300px;
+}
+
+/* ----- Sessões ----- */
+
+.introducao {
+  flex: 3;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+.introducao-title {
+	margin-top: 0;
+}
+
+.header-style {
+	border-bottom: 1px solid;
+	padding: 4px;
+	width: 75%;
+	margin-top: 3rem;
+}
+
+.header-style:first-child {
+	margin-top: 0;
+}
+
+header,
+footer {
+  background-color: #000;
+  color: #fff;
+  flex-basis: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.conteudo-principal {
+  flex-basis: 100%;
+  padding: 10px;
+  min-height: 80px;
+  margin: 10px 0 10px 0;
+}
+
+.area-video {
+  flex-basis: 100%;
+  padding: 10px;
+  min-height: 80px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.patrocinadores {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.formulario {
+  flex: 1;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  text-align: center;
+}
+
+/* ----- Menu de navegação ----- */
+
+nav {
+  flex: 1;
+  padding: 10px;
+}
+
+#titulo-menu {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.nav-list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+ul > li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #333;
+  align-items: center;
+}
+
+ul li a:hover {
+  background-color: #555;
+}
+
+.nav-li {
+  margin: 50px;
+}
+
+/* ----- Tabela ----- */
+
+th,
+td {
+  border: 2px solid #000;
+  text-align: center;
+  padding: 10px;
+}
+
+#tabela {
+  border-collapse: collapse;
+}
+
+tr:nth-child(2n) {
+  background-color: #ddd;
+}
+
+/* ----- Diversos -----*/
+
+.msg {
+  display: inline-block;
+}
+
+#msg-footer {
+  color: #ddd;
+}
+
+.input-box {
+	height: 2rem;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 9px;
+}
+
+.textarea-box{
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 9px;
+}
+
+.button-style {
+	width: 100%;
+    color: #fff;
+    background: red;
+    font-size: 1.2em;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+
+strong + em {
+  font-weight: bold;
+}
+
+
+
+/* --- Media queries (Regras de css responsiva) --- */
+
+@media (max-width: 400px) {
+  /* Condicional pra telas menores que 700px */
+  body {
+    flex-direction: column;
+  }
+
+  .introducao {
+    margin: 10px 0 10px 0;
+  }
+}
